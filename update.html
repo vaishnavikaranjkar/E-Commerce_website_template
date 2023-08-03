@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="styles/styles_template.css">
+    <link rel="stylesheet" href="styles/styles_update.css">
+
+</head>
+<body>
+  <nav>
+    <div class="nav-item">
+      <a href="home.html" id="buyEasy"><b>buyEasy</b></a>
+    </div>
+    <div class="nav-item">
+      <a href="add_product.html">Add Product</a>
+    </div>
+    <div class="nav-item">
+      <a href="cart.html">Cart</a>
+    </div>
+    <div class="nav-item">
+      <a href="update.html">Update Item Info (admin)</a>
+    </div>
+    <div class="nav-item right">
+      <a href="login.html">Login</a>
+    </div>    
+  </nav>
+
+        <div class="update-form">
+        
+        <form method="post" action="/update/{{id}}">
+            <h1 class="form-heading">Update the item</h1>
+
+            <div class="form-item">
+                <label for="name">Item name : </label>
+                <input type="text" name="name" placeholder="Enter the Name">
+            </div>
+
+            <div class="form-item">
+                <label for="rate">Rate : </label>
+                <input type="number" name="rate" placeholder="Enter the Rate">
+            </div>
+
+            <div class="form-item">
+                <label for="quantity">Quantity : </label>
+                <input type="number" name="quantity" placeholder="Enter the Quantity"/>
+                <label for="unit">Units: </label>
+                <input type="number" name="unit" placeholder="Enter the Units"/>    
+            </div>
+
+            <div class="form-item">
+                <label for="product">Category : </label>
+                <input type="text" name="product" placeholder="Enter the Category">
+            </div>
+
+            <div class="form-item">
+                <button class="update-button" type="Submit">Update</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer-div">
+        @copyright 2023
+      </footer>
+</body>
+</html>
